@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="775.0" prefWidth="1256.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controlador.TablaController">
+   <children>
+      <TableView fx:id="tabla" prefHeight="775.0" prefWidth="1256.0">
+        <columns>
+          <TableColumn fx:id="nombre" prefWidth="123.0" text="Nombre" />
+          <TableColumn fx:id="utc" prefWidth="131.0" text="UTC" />
+            <TableColumn fx:id="latitud" prefWidth="58.0" text="Latitud" />
+            <TableColumn fx:id="grados" prefWidth="116.0" text="Grados" />
+            <TableColumn fx:id="minutos" prefWidth="82.0" text="Minutos" />
+            <TableColumn fx:id="segundos" prefWidth="89.0" text="Segundos" />
+            <TableColumn fx:id="longitud" prefWidth="61.0" text="Longitud" />
+            <TableColumn fx:id="lGrados" prefWidth="121.0" text="Grados " />
+            <TableColumn fx:id="lMinutos" prefWidth="95.0" text="Minutos " />
+            <TableColumn fx:id="lSegundos" prefWidth="104.0" text="Segundos" />
+            <TableColumn fx:id="lat" prefWidth="141.0" text="Latitud en No." />
+            <TableColumn fx:id="lon" prefWidth="134.0" text="Longitud en No." />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
